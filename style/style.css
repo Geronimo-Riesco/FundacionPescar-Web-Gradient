@@ -1,0 +1,336 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(
+    -45deg,
+    #f2eee3,
+    #e9d1d0,
+    #fae0ba,
+    #eb8c73,
+    #f0ded1,
+    #dec4a7
+  );
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* CADA ETIQUETA DEL MENU LAS QUIERO CON COLOR BLANCO*/
+a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* MIS ETIQUETAS DEL MENU LE SACO LOS ESTILOS QUE PUEDAN TENER*/
+ul {
+  list-style: none;
+}
+
+/* MI CONTENER DE TODA LA PAGINA WEB LA POSICIONO*/
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* ICONO MENU*/
+.nav-brand {
+  width: 50px;
+}
+
+/* NAVEGACIÓN */
+.nav-bar {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 20px 0;
+}
+
+/* NAVEGACIÓN IZQUIERDA */
+.nav-bar ul {
+  display: flex;
+}
+
+/* NAVEGACIÓN IZQUIERDA LE DOY UN ESPACIO A LAS ETIQUETAS DEL ICONO */
+.nav-bar ul li {
+  padding: 10px;
+}
+
+/* NAVEGACIÓN IZQUIERDA LE DOY UN ESPACIO ENTRE CADA ETIQUETAS */
+.nav-bar ul li a {
+  padding: 10px;
+}
+
+/* NAVEGACIÓN IZQUIERDA LE DOY UN ESTILO A CADA ETIQUETA */
+.nav-bar ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+/* NAVEGACIÓN IZQUIERDA JUNTO LAS ETIQUETAS AL LADO DEL ICONO*/
+.nav-bar ul.nav-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+/* BOTON RESPONSIVE */
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 36px;
+  display: none;
+}
+
+/* LINEA DIVISORIA ENTRE MENÚ Y PORTADA*/
+hr {
+  margin: 8px 0;
+}
+
+/* PORTADA: EDUCAMOS PARA EL TRABAJO TRANSFORMAMOS VIDAS */
+#home {
+  width: 100%;
+  height: 550px;
+  background: url("../img/portada.jpg") no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 40px;
+  margin-bottom: 10px;
+}
+
+/* TITULO "FUNDACION PESCAR" DE LA PORTADA */
+#home h1 {
+  color: #262622;
+  font-weight: bold;
+  padding: 7px 12px;
+  background: #ffffff;
+  border: 1px solid #262622;
+  margin-bottom: 15px;
+}
+
+/* BOTÓN CONTACTENOS DE LA PORTADA */
+.btn {
+  font-weight: bold;
+  padding: 8px 12px;
+  background: #de6712;
+  color: #ffffff;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+}
+
+/* EFECTO PARA CUANDO PASAS EL MOUSE ENCIMA DEL BOTÓN CONTACTENOS DE LA PORTADA */
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* ----------------------------------------- EDUCANDO PARA EL TRABAJO ----------------------------------------- */
+
+#intro,
+#features,
+#contact,
+#social {
+  margin-bottom: 100px;
+  margin-top: 100px;
+}
+
+/* SUBRAYO LOS H2 CON UNA IMÁGEN  */
+#intro h2,
+#features h2,
+#contact h2 {
+  padding-bottom: 30px;
+  text-align: center;
+  background: url("../img/h2.png") no-repeat center bottom;
+}
+
+#intro p {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* ----------------------------------------- ¿QUÉ ES PESCAR? ----------------------------------------- */
+
+/* CRÉO UNA FILA DE 3 COLUMNAS AUTO*/
+.features-card,
+.contact-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 40px;
+  margin: 50px 0;
+}
+
+/* AJUSTO EL TAMAÑO DEL CONTENEDOR */
+.features-card div,
+.contact-details div {
+  width: 30%;
+  min-width: 350px;
+  flex-grow: 0;
+}
+
+/* AJUSTO EL TAMAÑO DE LAS CARTAS */
+.features-card img {
+  width: 100%;
+  height: auto;
+}
+
+/* CENTRO LOS PARRAFOS */
+.features-card p {
+  margin: 40px 0;
+  text-align: center;
+}
+
+/* CENTRO LOS TITUL0S */
+.features-card h3 {
+  text-align: center;
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+/* -------------------------------------- FUNDACION PESCAR BOTÓN -------------------------------------- */
+
+/* CENTRO LA CAJA FUNDACION PESCAR */
+#button-pescar {
+  text-align: center;
+  margin-bottom: 120px;
+}
+
+/* CRÉO LOS BORDES DEL BOTÓN */
+.pescar-btn {
+  padding: 25px 40px;
+  color: #000000;
+  border: solid 1px #000000;
+  font-weight: bold;
+}
+
+/* EFECTO PARA CUANDO PASAS EL MOUSE ENCIMA DEL BOTÓN */
+.pescar-btn:hover {
+  color: #ffffff;
+  border: solid 1px #ffffff;
+}
+
+/* ------------------------------------------- CONTACTO ------------------------------------------------ */
+
+/* CENTRAMOS EL TITULO CONTACTO Y LOS PARRAFOS */
+.contact-details h3,
+.contact-details p {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* ------------------------------------ FOLLOW @FundaciónPescar ---------------------------------------- */
+
+/* CENTRAMOS EL TITULO FOLLOW @FundaciónPescar */
+#social h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+/* CENTRAMOS LOS ICONOS FOLLOW @FundaciónPescar */
+.links {
+  display: flex;
+  justify-content: center;
+}
+
+/* SEPARAMOS LOS ICONOS FOLLOW @FundaciónPescar */
+.links a {
+  margin: 0 25px;
+}
+
+/* AGRANDAMOS LOS ICONOS FOLLOW @FundaciónPescar */
+.links a i {
+  font-size: 3rem;
+}
+
+/* EFECTO PARA CUANDO PASAS EL MOUSE ENCIMA DE LOS ICONOS FOLLOW @FundaciónPescar */
+.links a i:hover {
+  color: #ffffff;
+}
+
+/* -------------------------- FOOTER Centro Pescar "Paths to the Future" ------------------------------ */
+
+#foot {
+  color: #ffffff;
+  background-color: #000000;
+  padding-block: 15px;
+  text-align: center;
+}
+
+/* -------------------------------------- MOVÍL RESPONSIVE 800px -------------------------------------- */
+@media (max-width: 800px) {
+  .menu-btn {
+    display: block;
+  }
+
+  /* LE DOY UN EFECTO A MI BOTÓN MENÚ */
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  a {
+    color: #ffffff;
+  }
+
+  .nav-menu-right a, .links i{
+    color: #000000;
+  }
+
+  /* MEJORO MI NAVEGACION EN EL MENÚ */
+  .nav-bar ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    height: 100%;
+    border-right: #ffffff 1px solid;
+    opacity: 0.9;
+    padding: 25px;
+    transform: translateX(-400px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* CORRIGO MI LETRA Y TAMAÑO DEL MENÚ */
+  .nav-bar ul.nav-menu li {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  /* QUE SE AMPLIE MI MENÚ CON LA ITERACCIÓN CON JS */
+  .nav-bar ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+
+  /* SEPARO MI LUPA DEL ICONO MENÚ */
+  .nav-bar ul.nav-menu-right {
+    margin-left: 36rem;
+  }
+
+  .features-card,
+  .contact-details {
+    gap: 45px;
+  }
+}
