@@ -325,6 +325,10 @@ ul {
     margin-left: 36rem;
   }
 
+  .nav-menu-right li a i {
+    display: none;
+  }
+
   #home {
     background: url("../img/portadaMobile.png") no-repeat center center/cover;
   }
