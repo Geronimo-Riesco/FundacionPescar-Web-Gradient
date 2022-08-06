@@ -103,11 +103,6 @@ ul {
   display: none;
 }
 
-/* LINEA DIVISORIA ENTRE MENÚ Y PORTADA*/
-hr {
-  margin: 8px 0;
-}
-
 /* PORTADA: EDUCAMOS PARA EL TRABAJO TRANSFORMAMOS VIDAS */
 #home {
   width: 100%;
@@ -227,8 +222,8 @@ hr {
 
 /* EFECTO PARA CUANDO PASAS EL MOUSE ENCIMA DEL BOTÓN */
 .pescar-btn:hover {
-  color: #ffffff;
-  border: solid 1px #ffffff;
+  color: #1f2d8d;
+  border: solid 1px #1f2d8d;
 }
 
 /* ------------------------------------------- CONTACTO ------------------------------------------------ */
@@ -267,14 +262,14 @@ hr {
 
 /* EFECTO PARA CUANDO PASAS EL MOUSE ENCIMA DE LOS ICONOS FOLLOW @FundaciónPescar */
 .links a i:hover {
-  color: #ffffff;
+  color: #1f2d8d;
 }
 
 /* -------------------------- FOOTER Centro Pescar "Paths to the Future" ------------------------------ */
 
 #foot {
   color: #ffffff;
-  background-color: #000000;
+  background-color: #1f2d8d;
   padding-block: 15px;
   text-align: center;
 }
@@ -294,7 +289,8 @@ hr {
     color: #ffffff;
   }
 
-  .nav-menu-right a, .links i{
+  .nav-menu-right a,
+  .links i {
     color: #000000;
   }
 
@@ -308,7 +304,7 @@ hr {
     height: 100%;
     border-right: #ffffff 1px solid;
     opacity: 0.9;
-    padding: 25px;
+    padding: 18px;
     transform: translateX(-400px);
     transition: transform 0.5s ease-in-out;
   }
@@ -329,8 +325,29 @@ hr {
     margin-left: 36rem;
   }
 
+  #home {
+    background: url("../img/portadaMobile.png") no-repeat center center/cover;
+  }
+
+  #home h1 {
+    font-size: 18px;
+  }
+
   .features-card,
   .contact-details {
     gap: 45px;
+  }
+
+  .pescar-btn:hover {
+    color: #ffffff;
+    border: solid 1px #ffffff;
+  }
+
+  .links a i:hover {
+    color: #ffffff;
+  }
+
+  #foot {
+    background-color: #000000;
   }
 }
